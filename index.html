@@ -11,6 +11,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+		<style>
+			.outreach-photo { margin-top: 0.25rem; }
+			.outreach-photo img { display: block; width: 100%; height: auto; border-radius: 4px; }
+			.outreach-photo--left { float: left; width: 58%; margin-right: 1.25rem; margin-bottom: 0.6rem; }
+			.outreach-photo--right { float: right; width: 38%; margin-left: 1.25rem; margin-bottom: 0.6rem; }
+			.outreach-photo figcaption { font-size: 0.78em; line-height: 1.45; margin-top: 0.45rem; }
+			.outreach-clear { clear: both; }
+			@media screen and (max-width: 736px) {
+				.outreach-photo--left,
+				.outreach-photo--right { float: none; width: 100%; margin: 0 0 1.25rem 0; }
+			}
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -52,44 +64,68 @@
 						<!--<a href="https://www.eso.org/public/teles-instr/alma/" target="_blank" style="text-decoration: underline;">ALMA</a>-->
 
 							<article id="research">
-								<h2 class="major">research</h2>
-								<span class="image main"><img src="images/interactingGalaxies.jpg" alt="" /></span>
-								<p>My research interests focus on galaxy evolution across cosmic time, where I study the suppression of star formation via recently quenched galaxies over multiple wavelengths. My advisor at TAMU is <a href="https://justinspilker.com/#qpsb" target="_blank" style="text-decoration: underline;">Dr. Justin Spilker</a> and I'm also a member of the <a href="https://squigglesurvey.github.io/" target="_blank" style="text-decoration: underline;">SQuIGGLE</a> team!<br>
-								   
-								<h3>Quenching via Tidal Gas Removal in Massive PSB<span style="text-transform: lowercase;">s</span></h3> 
-								Early on in grad school I joined the SQuIGGLE (Studying Quenching in Intermediate-z Galaxies: Gas, Angular Momentum, and Evolution) collaboration, which constructed a large survey of massive galaxies that have recently quenched, known as post-starburst galaxies (PSBs), at redshift ~ 0.7. SQuIGGLE uses multiwavelength observations to study the physical mechanisms of quenching. 
-								My first paper (submitted to ApJ) involved the study of two objects from a large ALMA followup campaign which has shown that <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...925..153B/abstract" target="_blank" style="text-decoration: underline;">high-z massive PSBs retain large cold gas reservoirs</a> that rapidly vanish over the ensuing ~100 Myr after quenching. I investigated two PSBs using ALMA, VLA, and HST (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...936L..11S/abstract" target="_blank" style="text-decoration: underline;">one</a> which has already shown that roughly 50% of its cold gas was ejected during a recent merger!), suggesting that the tidal removal of cold gas is a novel pathway for star formation suppression.
+    <h2 class="major">research</h2>
+    <p>Understanding how galaxies grow and eventually stop forming stars is a central question in galaxy evolution. I use data across multiple wavelengths (primarily radio with ALMA and VLA) to study the fuel that survives in recently quenched, or post-starburst, galaxies. At TAMU I work with <a href="https://justinspilker.com/#qpsb" target="_blank" rel="noopener noreferrer">Dr. Justin Spilker</a>, and I am a member of the <a href="https://squigglesurvey.github.io/" target="_blank" rel="noopener noreferrer">SQuIGGLE</a> collaboration, which studies massive post-starburst galaxies at redshift <i>z</i> &sim; 0.7.</p>
 
-								<br><br><h3>Timing the Onset of Radio-Mode Feedback in High-Redshift PSB<span style="text-transform: lowercase;">s</span> with VLA</h3>
-								Another project I'm working on involves investigating when and how radio-mode AGN feedback begins in massive PSBs at this cosmic epoch. While these galaxies recently shut down star formation, they still retain cold molecular gas and even sometimes show signs of compact radio jets. We’re using deep VLA C-band imaging (VLA/22A-362) to trace faint AGN activity and spatially resolve radio jets or bubbles that might be heating the gas and preventing star formation from reigniting.
+    <h3>Molecular gas in tidal tails</h3>
+    <p>Galaxy mergers can pull gas far beyond the region where most of a galaxy's stars reside. In <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...990..166D/abstract" target="_blank" rel="noopener noreferrer">D'Onofrio et al. (2025)</a>, I combined ALMA, Hubble, and VLA observations of two SQuIGGLE post-starbursts to investigate the molecular gas and star formation in their tidal tails. Roughly half of each system's molecular gas lies in these extended structures, which reach up to 65 kiloparsecs from the central galaxy. These observations show that mergers can redistribute a substantial fraction of the fuel during the transition to quiescence. Yet both galaxies retain substantial central reservoirs, leaving an important question: what prevents the remaining gas from efficiently forming stars?</p>
+    <figure style="margin: 0 0 2rem;">
+        <a href="images/j1448-co-tidal-tails.png" target="_blank" rel="noopener noreferrer" style="display: block; border-bottom: 0;" aria-label="Open full-resolution J1448 molecular gas figure">
+            <img src="images/j1448-co-tidal-tails.png" alt="Three ALMA CO(2–1) maps of J1448+1010 showing integrated emission, mean velocity, and velocity dispersion, with molecular gas extending into northern and southern tidal tails." width="2400" height="697" loading="lazy" style="display: block; width: 100%; height: auto; background: white;" />
+        </a>
+        <figcaption style="font-size: 0.85em; line-height: 1.6; margin-top: 0.65rem;">Molecular gas in J1448+1010: integrated CO emission (left), mean velocity (middle), and velocity dispersion (right). Approximately half of the CO emission lies in the tidal tails. From D'Onofrio et al. (2025), reproducing the maps presented by <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...936L..11S/abstract" target="_blank" rel="noopener noreferrer">Spilker et al. (2022)</a>. Click the figure to enlarge.</figcaption>
+    </figure>
 
-								<br><br><h3>Young or Frustrated? Using the VLA to Test Jet Feedback in Recently Quenched Galaxies</h3>
-								I led a successful VLA proposal (VLA/24B-451) targeting four of the post-starburst galaxies at z ~ 0.7 that show clear compact radio jets, aiming to measure the ages of those jets and test their connection to quenching. The big question: are these jets young, just turning on after the galaxy quenched and playing a maintenance role—or are they old and "frustrated", trapped in a dense ISM and potentially involved in shutting down star formation in the first place? Using high-resolution, multi-frequency VLA imaging (3, 6, 10, and 15 GHz), we can apply spectral aging techniques to estimate the jet lifetimes and directly compare them to each galaxy’s star formation history.
+    <h3>The physical state of the surviving gas</h3>
+    <p>The presence of molecular gas alone does not tell us whether a galaxy will form stars: the conditions within that gas matter. In <a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1003...52D/abstract" target="_blank" rel="noopener noreferrer">D'Onofrio et al. (2026)</a>, I led an ALMA study of CO excitation in nine gas-rich SQuIGGLE post-starbursts, comparing emission from different rotational transitions to investigate the physical state of their surviving reservoirs. Most systems show moderate excitation, while J1448+1010, which hosts an active galactic nucleus, stands out with much more highly excited gas. Its excitation likely requires an additional source of heating beyond star formation, although obscured star formation may also contribute. These results motivate a closer look at whether the remaining reservoirs contain the dense gas most closely associated with star formation, and how black hole activity may influence those conditions.</p>
+    <figure style="margin: 0 0 2rem;">
+        <a href="images/co-excitation-sled.png" target="_blank" rel="noopener noreferrer" style="display: block; border-bottom: 0;" aria-label="Open full-resolution CO excitation figure">
+            <img src="images/co-excitation-sled.png" alt="Three panels comparing CO spectral line energy distributions, excitation-ratio histograms, and cumulative distributions for SQuIGGLE post-starbursts and star-forming comparison galaxies. J1448+1010 is highlighted as a high-excitation outlier." width="2400" height="756" loading="lazy" style="display: block; width: 100%; height: auto; background: white;" />
+        </a>
+        <figcaption style="font-size: 0.85em; line-height: 1.6; margin-top: 0.65rem;">CO spectral line energy distributions (left) and excitation ratio distributions (middle and right) from D'Onofrio et al. (2026). SQuIGGLE galaxies are shown in orange; the blue outline marks the highly excited AGN host J1448+1010. Most of the sample has moderate excitation. Click the figure to enlarge.</figcaption>
+    </figure>
 
-								<span class="image main"><img src="images/vla.jpg" alt="" /></span>
+    <h3>Ongoing: radio activity, dense gas, and quenching across cosmic time</h3>
+    <p>I am leading a VLA survey of ~50 SQuIGGLE galaxies designed to connect radio activity to the time elapsed since each galaxy's recent burst and to the molecular gas that survives afterward. I have several ongoing ALMA and VLA programs that use complementary views of cold gas and radio emission to determine what regulates this surviving fuel and keeps these galaxies from resuming star formation. Building on the survey, I will use high-resolution, multifrequency VLA observations to distinguish radio emission associated with black hole activity from emission produced by ongoing or recent star formation. In four systems with structures consistent with compact radio lobes, I will also model how the radio spectrum changes as the emitting electrons lose energy, testing whether the currently visible activity accompanied the decline in star formation or began afterward. My complementary ALMA program will measure multiple dense-gas lines in three gas-rich post-starbursts to determine whether their surviving reservoirs lack a substantial dense component or retain dense gas despite suppressed star formation. I am also extending these questions to several spectroscopically confirmed massive quiescent galaxies at <i>z</i> &sim; 3&ndash;4.5. By using ALMA to measure, or place stringent limits on, their dust-based gas masses, I will test whether substantial fuel reservoirs can survive the earliest shutdowns of star formation and whether quenching follows similar pathways across cosmic time.</p>
 
-								<h3>Diffuse or Dense? Testing the Physical State of Cold Gas in Recently-Quenched Galaxies with ALMA</h3>
-								Post-starburst galaxies at z ~ 0.7 are weird: they’ve just shut off star formation, yet somehow still contain enormous molecular gas reservoirs. I led a successful ALMA Band 7 proposal (2024.1.01252.S) to follow up the most gas-rich members of the SQuIGGLE PSB sample with deep CO(5-4) observations. These mid-J lines are key to testing whether the gas is dense and actively forming stars (but deeply obscured), or diffuse and turbulent enough to be star-formation-inactive.
-								
-								<span class="image main"><img src="images/alma.jpg" alt="" /></span>
-
-								</p>
-							</article>
+    <figure style="margin: 0;">
+        <div style="display: flex; gap: 1rem; align-items: stretch;">
+            <a href="images/alma.jpg" target="_blank" rel="noopener noreferrer" style="display: block; flex: 1 1 50%; border-bottom: 0; overflow: hidden;" aria-label="Open full-resolution ALMA photograph">
+                <img src="images/alma.jpg" alt="The Atacama Large Millimeter/submillimeter Array in northern Chile." loading="lazy" style="display: block; width: 100%; height: 100%; min-height: 12rem; object-fit: cover;" />
+            </a>
+            <a href="images/vla.jpg" target="_blank" rel="noopener noreferrer" style="display: block; flex: 1 1 50%; border-bottom: 0; overflow: hidden;" aria-label="Open full-resolution VLA photograph">
+                <img src="images/vla.jpg" alt="The Karl G. Jansky Very Large Array in New Mexico." loading="lazy" style="display: block; width: 100%; height: 100%; min-height: 12rem; object-fit: cover;" />
+            </a>
+        </div>
+        <figcaption style="font-size: 0.85em; line-height: 1.6; margin-top: 0.65rem;">ALMA (left) and the VLA (right), the two observatories central to my research.</figcaption>
+    </figure>
+</article>
 
 						<!-- Work -->
 							<article id="outreach">
 								<h2 class="major">outreach</h2>
 
-								<h3>Astronomy on Tap, MAGIC, and others!</h3>
-								<p>I am an active member in TAMU’s monthly Astronomy on Tap (AoT) chapter! Each month, I inform the audience of the recent happenings in astronomy as anchor of the In the News segment. In the past,  I've intrigued the space-interested locals by running the event’s trivia session, too.<br><br>
+								<h3>Sharing astronomy and supporting students</h3>
 
-								Within the physics and astronomy department at TAMU, I am a coordinator of MAGIC (Mentoring and Advising Graduates in an Inclusive Community), which is a collaborative graduate student-run program that helps students with the transition to graduate school. I have also co-led GLASS (Graduates Learning Astro and Soft Skills), another grad student-run program which provided fellow graduate students with tips on professional upkeep as well as coding tricks and tools.<br><br>
+								<figure class="outreach-photo outreach-photo--left">
+									<img src="images/aot.jpeg" alt="Vinny standing in front of the Astronomy on Tap In the News screen." loading="lazy" />
+									<figcaption>Presenting <i>In the News</i> at Astronomy on Tap.</figcaption>
+								</figure>
 
-								I also like to participate in various other forms of outreach and community engagement, such as the <a href="https://www.adoptaphysicist.org/" target="_blank" style="text-decoration: underline;">Adopt-a-Physicist program</a> as well as TAMU's Physics Festival which is attended by thousands from the local area! There's me below <i>frustratingly</i> trying to center an old H-alpha telescope on the Sun, allowing the public to get a view of its chromosphere :)
+								<p>I enjoy making astronomy accessible to audiences both inside and outside the university setting. At TAMU's monthly <a href="https://astronomyontap.org/locations/bcs/" target="_blank" rel="noopener noreferrer">Astronomy on Tap</a> events, I served as the <i>In the News</i> presenter, translating recent discoveries for a public audience, and previously created the evening's astronomy trivia. I have also given public talks on topics like the practical challenges of sending people to Mars, and I'm counting down the days to talk about the cosmology of middle earth on Tolkien Reading Day 2027!</p>
 
-								</p>
-								
-								<span class="image main"><img src="images/vinnyPhysicsFestCropped.jpg" alt="" /></span>
+								<p>Within the Texas A&amp;M Department of Physics and Astronomy, I coordinate MAGIC (Mentoring and Advising Graduates in an Inclusive Community), a graduate student-run program that helps incoming students navigate the transition to graduate school. I also co-led GLASS (Graduates Learning Astro and Soft Skills), which organized practical workshops on research tools, coding, and professional development.</p>
+
+								<p>My outreach also connects me directly with younger students. Through <a href="https://prescientist.org/" target="_blank" rel="noopener noreferrer">Letters to a Pre-Scientist</a>, I serve as a STEM pen pal and help make a career in astronomy feel more tangible. I have also spoken with local high school students about the day-to-day experience of pursuing an astronomy Ph.D. and participated in the <a href="https://www.adoptaphysicist.org/" target="_blank" rel="noopener noreferrer">Adopt-a-Physicist</a> program.</p>
+
+								<figure class="outreach-photo outreach-photo--right">
+									<img src="images/vinnyPhysicsFestCropped.jpg" alt="Vinny adjusting a solar telescope at the Texas A&amp;M Physics and Engineering Festival." loading="lazy" />
+									<figcaption>Setting up a solar telescope at the Texas A&amp;M Physics and Engineering Festival.</figcaption>
+								</figure>
+
+								<p>I also volunteer at the annual <a href="https://physicsfestival.tamu.edu/" target="_blank" rel="noopener noreferrer">Texas A&amp;M Physics and Engineering Festival</a>, where thousands of visitors explore hands-on science demonstrations. One of my favorite roles is helping visitors observe the Sun's chromosphere through an H-alpha telescope... once I manage to get it centered!</p>
+
+								<div class="outreach-clear"></div>
 
 							</article>
 
@@ -97,15 +133,15 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/User_Picture.jpg" alt="" /></span>
-								<p>Hello! I'm Vinny, a fourth-year graduate student in astronomy at Texas A&M University (TAMU). I'm currently working with Justin Spilker and the SQuIGGLE colab studying the suppression of star formation, or 'quenching', in higher redshift post-starburst galaxies. My interests in astronomy primarily include galaxy evolution across cosmic time, mainly using data from radio telescopes like <a href="https://www.eso.org/public/teles-instr/alma/" target="_blank" style="text-decoration: underline;">ALMA</a> and <a href="https://public.nrao.edu/telescopes/vla/" target="_blank" style="text-decoration: underline;">VLA</a>.
-									 I'm also very active in mentoring and outreach for a variety of audiences, where my goal is to promote astronomy in an inclusive manner.<br><br>  
+								<p>Hello! I'm Vinny, a fifth-year graduate student in astronomy at Texas A&M University (TAMU). I work with Justin Spilker and the SQuIGGLE colab studying the suppression of star formation, or 'quenching', in higher redshift post-starburst galaxies. My interests in astronomy primarily include galaxy evolution across cosmic time, mainly using data from radio telescopes like <a href="https://www.eso.org/public/teles-instr/alma/" target="_blank" style="text-decoration: underline;">ALMA</a> and <a href="https://public.nrao.edu/telescopes/vla/" target="_blank" style="text-decoration: underline;">VLA</a>.
+									 I'm also very active in mentoring and outreach for a variety of audiences, where my goal is to promote astronomy in an inclusive manner. In my free time, I'm a huge Lord of the Rings nerd and Detroit sports fan!<br><br>  
 									 Get in touch at donofr19@tamu.edu!  </p>
 							</article>
 
 						<!-- CV -->
 							<article id="cv">
 								<h2 class="major">CV</h2>
-								<p>You can view my CV (last updated August 2026) by clicking the button below.</p>
+								<p>You can view my CV (last updated September 2026) by clicking the button below.</p>
 								<ul class="actions">
 									<li>
 										<a href="assets/CV_VincenzoDOnofrio.pdf" target="_blank" class="button primary icon solid fa-download">
@@ -392,7 +428,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p email: class="copyright">&copy; Vinny D'Onofrio 2026. Design: <a href="https://html5up.net">HTML5 UP</a>. Last updated August 2026.</p>
+						<p email: class="copyright">&copy; Vinny D'Onofrio 2026. Design: <a href="https://html5up.net">HTML5 UP</a>. Last updated September 2026.</p>
 					</footer>
 
 			</div>
